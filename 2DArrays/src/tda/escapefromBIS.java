@@ -9,7 +9,7 @@ public class escapefromBIS {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		currentRoom=0;
+		currentRoom=1;
 		
 		int maze[][] = {
 			{-1, 1, -1, -1}, //0
