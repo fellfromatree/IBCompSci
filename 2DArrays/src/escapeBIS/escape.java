@@ -13,12 +13,13 @@ public class escape {
 	public static void main(String[] args) 
 	{
 		escape game1 = new escape();
-		moves = new Stack();
+		//moves = new Stack();
 		
 	}
 	
 	public escape() 
 	{
+		rooms = new int[16][4];
 		for(int i=0;i<16;i++)
 		{
 			for(int j=0;j<4;j++)
