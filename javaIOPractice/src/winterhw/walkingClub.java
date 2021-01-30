@@ -12,7 +12,7 @@ public class walkingClub {
 	int namesRead; 
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// 
 		walkingClub w1 = new walkingClub();
 
 

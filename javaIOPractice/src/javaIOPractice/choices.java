@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class choices {
  
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
+    // 
     System.out.println("This PC");
     Scanner choose = new Scanner(System.in);
     int folder = 0;

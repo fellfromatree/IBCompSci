@@ -2,10 +2,9 @@ package trains;
 import java.util.Scanner;
 
 public class journeyCalc {
-
+	//TODO add internal commentary
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		journeyCalc c1 = new journeyCalc();
 	}
 	
