@@ -9,6 +9,7 @@ public class escape {
 	 int direction;
 	 int[][] rooms;
 	 static Stack<Integer> moves;
+	 
 	
 	public static void main(String[] args) 
 	{
