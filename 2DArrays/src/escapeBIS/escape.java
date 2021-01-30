@@ -14,7 +14,7 @@ public class escape {
 	public static void main(String[] args) 
 	{
 		escape game1 = new escape();
-		//moves = new Stack();
+		moves = new Stack();
 		
 	}
 	
