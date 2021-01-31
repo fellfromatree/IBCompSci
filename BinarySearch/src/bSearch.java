@@ -5,8 +5,8 @@ public class bSearch
 	public bSearch(int target)
 	{
 		// Initialise data structures
-		int[] intArray = {1, 14, 16, 23, 42, 53, 67, 93, 212, 537};
-		
+		int[] intArraySorted = {1, 14, 16, 23, 42, 53, 67, 93, 212, 537};
+		int[] intArrayUnsorted = {1, 212, 16, 67, 42, 53, 23, 14, 93, 537};
 		// Set high and low pointers and found position
 		
 		// While the item hasn't been found and low is <= high
