@@ -31,6 +31,7 @@ public class influencer {
 		{
 			System.out.println("Please enter the description of post " + (x+1));
 			posts[x] = kb.nextLine();
+			
 			System.out.println("How many likes does post " + (x+1)+" have?");
 			likes[x] = getValidNum();
 		}
@@ -38,10 +39,10 @@ public class influencer {
 	
 	public int getValidNum()
 	{
-		int x =0;
+		int x =-1;
 		boolean valid = false;
 		Scanner kb = new Scanner(System.in);
-		while (!valid)
+		while (!valid || x<0)
 		{
 			try
 			{
