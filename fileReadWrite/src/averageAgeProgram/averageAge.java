@@ -45,7 +45,7 @@ public class averageAge {
 	{
 		// Hard-coded path to the CSV file we're working with
 		// This can be replaced with a file chooser later on.
-		String pathToFile = "/Users/paulcasey/Desktop/names.csv";
+		String pathToFile = "/Users/paul.casey/Desktop/names.csv";
 
 		
 		// Try Catch used to deal with file read errors
