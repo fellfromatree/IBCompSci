@@ -20,7 +20,7 @@ public class influencer {
 		posts = new String[10];
 		likes = new int[10];
 		
-		posts();
+		
 		
 	}
 	
@@ -59,11 +59,11 @@ public class influencer {
 	
 	public void retrieveDetails()
 	{
-		evaluateProfile();
-		System.out.print("User: "+fullName);
-		System.out.print("Lives In: "+country);
-		System.out.print("Username: @"+userName);
-		System.out.print("Instafamous: "+instaFamous);
+		
+		System.out.println("User: "+fullName);
+		System.out.println("Lives In: "+country);
+		System.out.println("Username: @"+userName);
+		System.out.println("Instafamous: "+instaFamous);
 	}
 	
 	
@@ -84,7 +84,6 @@ public class influencer {
 	public void changeUsername(String nun)
 	{
 		this.userName = nun;
-		retrieveDetails();
 	}
 
 }
