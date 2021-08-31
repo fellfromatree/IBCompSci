@@ -32,6 +32,7 @@ public class rollDoubles
 			}
 		}
 		System.out.println("Number of doubles "+ doubles);
+		
 	}
 	
 	public rollDoubles()
