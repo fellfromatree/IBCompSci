@@ -31,7 +31,7 @@ public class rollDoubles
 				doubles++;
 			}
 		}
-		System.out.println("Number of doubles "+ doubles);
+		System.out.println("Number of doubles rolled is "+ doubles);
 		
 	}
 	
