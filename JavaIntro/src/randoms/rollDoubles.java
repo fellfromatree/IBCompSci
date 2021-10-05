@@ -28,6 +28,7 @@ public class rollDoubles
 			System.out.println("Rolled "+num1+","+num2);
 			if(matching(num1,num2))
 			{
+				
 				doubles++;
 			}
 		}
