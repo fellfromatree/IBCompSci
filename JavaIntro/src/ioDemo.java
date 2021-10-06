@@ -20,6 +20,7 @@ public class ioDemo {
 	
 	public int addNums(int x, int y)
 	{
+		// Add the nums
 		return x+y;
 	}
 	
