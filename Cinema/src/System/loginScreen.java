@@ -138,9 +138,9 @@ public class loginScreen {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:8889/cinema","root","root");
+			Connection con = DriverManager.getConnection("jdbc:mysql://studentdb.mrcasey.org:3306/mrcaseyo_nlcs_pcasey","mrcaseyo_nlcs_pcasey","Pass");
 			Statement state = con.createStatement();
-			String sql = "Select * from users where username = '"+txtUsername.getText()+"' and password = '"+txtPassword.getText().toString()+"'";
+			String sql = "Select * from cinema_users where username = '"+txtUsername.getText()+"' and password = '"+txtPassword.getText().toString()+"'";
 			
 			ResultSet results = state.executeQuery(sql);
 			if(results.next())
@@ -159,6 +159,7 @@ public class loginScreen {
 		{
 			frame = new JFrame("error");
 			JOptionPane.showMessageDialog(frame, "Something went wrong.");
+			System.out.println(e);
 		}
 	}
 	

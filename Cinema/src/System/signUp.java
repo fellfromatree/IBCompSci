@@ -104,9 +104,9 @@ public class signUp extends JFrame {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:8889/cinema","root","root");
+			Connection con = DriverManager.getConnection("jdbc:mysql://studentdb.mrcasey.org:3306/mrcaseyo_nlcs_pcasey","mrcaseyo_nlcs_pcasey","Pass");
 			Statement state = con.createStatement();
-			String sql = "Select * from users where username = '"+txtNewUsername.getText()+"'";
+			String sql = "Select * from cinema_users where username = '"+txtNewUsername.getText()+"'";
 			
 			ResultSet results = state.executeQuery(sql);
 			if(results.next())
@@ -115,7 +115,7 @@ public class signUp extends JFrame {
 			}
 			else
 			{
-				sql = "INSERT into users (username, password, email) values ('"+txtNewUsername.getText()+"','"+txtNewPassword.getText().toString()+"','"+txtNewEmail.getText()+"');";
+				sql = "INSERT into cinema_users (username, password, email) values ('"+txtNewUsername.getText()+"','"+txtNewPassword.getText().toString()+"','"+txtNewEmail.getText()+"');";
 				System.out.println(sql);
 				state.executeUpdate(sql);
 				

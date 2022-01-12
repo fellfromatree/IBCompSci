@@ -89,9 +89,9 @@ public class mainMenu extends JFrame {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:8889/cinema","root","root");
+			Connection con = DriverManager.getConnection("jdbc:mysql://studentdb.mrcasey.org:3306/mrcaseyo_nlcs_pcasey","mrcaseyo_nlcs_pcasey","Pass");
 			Statement state = con.createStatement();
-			String sql = "Select * from movies";
+			String sql = "Select * from cinema_movies";
 			
 			ResultSet results = state.executeQuery(sql);
 			while(results.next())
